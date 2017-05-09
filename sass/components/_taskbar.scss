@@ -1,0 +1,68 @@
+.taskbar {
+	background-color: $aog-blue;
+	padding: $spacing-3 0;
+	border-bottom: 3px solid $aog-blue-4;
+}
+
+.logo-header {
+	text-align: center;	
+	a {
+		display: inline-block;
+	}
+
+	@media (min-width: $screen-tablet-min) {
+	    float: left;	    
+	}
+
+	@media (max-width: $screen-tablet-max) {
+	    float: none;
+	    margin: 0 auto;
+	}
+}
+
+.menu-header-wrapper {
+	a {
+		color: $aog-white;
+	}
+	.menu-header-categories {
+		display: inline-block;
+		border-right: 2px solid $aog-white;
+		margin-right: $spacing-1;
+
+		& > li {
+			display: inline-block;
+			margin: 0 $spacing-3/2;
+			line-height: 41px;
+		}
+
+		a {
+			font-family: $aog-menu;
+			text-transform: uppercase;
+		}
+
+		@media (max-width: $screen-tablet-max) {
+			margin-right: 0;
+		    border-right: none;
+		    border-bottom: 2px solid $aog-white;
+		}
+	}
+
+	.social-nav {
+		display: inline-block;
+
+		& > li {
+			display: inline-block;
+			margin: $spacing-1;
+		}
+	}
+	
+
+	@media (min-width: $screen-tablet-min) {
+	    float: right;	    
+	}
+
+	@media (max-width: $screen-tablet-max) {
+	    text-align: center;
+	}
+}
+

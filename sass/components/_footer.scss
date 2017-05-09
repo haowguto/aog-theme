@@ -1,0 +1,25 @@
+.footer {
+	background-color: $aog-blue-3;
+	text-align: center;
+	padding: $spacing-3 0 $spacing-4;
+	.menu-footer-categories {
+		& > li {
+			display: inline-block;
+			margin: 0 $spacing-3/2;
+			line-height: 41px;
+		}
+
+		a {
+			color: $aog-white;
+			font-family: $aog-menu;
+			text-transform: uppercase;
+		}
+	}
+
+	figure {
+		margin-top: $spacing-3;
+		a {
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,580 @@
+/* line 5, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 24, sass/mixins/_responsive-utilities.scss */
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+  display: none !important;
+}
+
+/* line 31, sass/helpers/_responsive-utilities.scss */
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 7, sass/mixins/_responsive-utilities.scss */
+  .visible-xs {
+    display: block !important;
+  }
+
+  /* line 10, sass/mixins/_responsive-utilities.scss */
+  table.visible-xs {
+    display: table;
+  }
+
+  /* line 13, sass/mixins/_responsive-utilities.scss */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 16, sass/mixins/_responsive-utilities.scss */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 49, sass/helpers/_responsive-utilities.scss */
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 54, sass/helpers/_responsive-utilities.scss */
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 59, sass/helpers/_responsive-utilities.scss */
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 7, sass/mixins/_responsive-utilities.scss */
+  .visible-sm {
+    display: block !important;
+  }
+
+  /* line 10, sass/mixins/_responsive-utilities.scss */
+  table.visible-sm {
+    display: table;
+  }
+
+  /* line 13, sass/mixins/_responsive-utilities.scss */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 16, sass/mixins/_responsive-utilities.scss */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 68, sass/helpers/_responsive-utilities.scss */
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 73, sass/helpers/_responsive-utilities.scss */
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 78, sass/helpers/_responsive-utilities.scss */
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+  /* line 7, sass/mixins/_responsive-utilities.scss */
+  .visible-md {
+    display: block !important;
+  }
+
+  /* line 10, sass/mixins/_responsive-utilities.scss */
+  table.visible-md {
+    display: table;
+  }
+
+  /* line 13, sass/mixins/_responsive-utilities.scss */
+  tr.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 16, sass/mixins/_responsive-utilities.scss */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1299px) {
+  /* line 87, sass/helpers/_responsive-utilities.scss */
+  .visible-md-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+  /* line 92, sass/helpers/_responsive-utilities.scss */
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+  /* line 97, sass/helpers/_responsive-utilities.scss */
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1300x) {
+  /* line 7, sass/mixins/_responsive-utilities.scss */
+  .visible-lg {
+    display: block !important;
+  }
+
+  /* line 10, sass/mixins/_responsive-utilities.scss */
+  table.visible-lg {
+    display: table;
+  }
+
+  /* line 13, sass/mixins/_responsive-utilities.scss */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 16, sass/mixins/_responsive-utilities.scss */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1300x) {
+  /* line 106, sass/helpers/_responsive-utilities.scss */
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1300x) {
+  /* line 111, sass/helpers/_responsive-utilities.scss */
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1300x) {
+  /* line 116, sass/helpers/_responsive-utilities.scss */
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 24, sass/mixins/_responsive-utilities.scss */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  /* line 24, sass/mixins/_responsive-utilities.scss */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1299px) {
+  /* line 24, sass/mixins/_responsive-utilities.scss */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1300x) {
+  /* line 24, sass/mixins/_responsive-utilities.scss */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+/* line 24, sass/mixins/_responsive-utilities.scss */
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 7, sass/mixins/_responsive-utilities.scss */
+  .visible-print {
+    display: block !important;
+  }
+
+  /* line 10, sass/mixins/_responsive-utilities.scss */
+  table.visible-print {
+    display: table;
+  }
+
+  /* line 13, sass/mixins/_responsive-utilities.scss */
+  tr.visible-print {
+    display: table-row !important;
+  }
+
+  /* line 16, sass/mixins/_responsive-utilities.scss */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+/* line 150, sass/helpers/_responsive-utilities.scss */
+.visible-print-block {
+  display: none !important;
+}
+@media print {
+  /* line 150, sass/helpers/_responsive-utilities.scss */
+  .visible-print-block {
+    display: block !important;
+  }
+}
+
+/* line 157, sass/helpers/_responsive-utilities.scss */
+.visible-print-inline {
+  display: none !important;
+}
+@media print {
+  /* line 157, sass/helpers/_responsive-utilities.scss */
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+
+/* line 164, sass/helpers/_responsive-utilities.scss */
+.visible-print-inline-block {
+  display: none !important;
+}
+@media print {
+  /* line 164, sass/helpers/_responsive-utilities.scss */
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media print {
+  /* line 24, sass/mixins/_responsive-utilities.scss */
+  .hidden-print {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 179, sass/helpers/_responsive-utilities.scss */
+  .text-align-center-small-screens {
+    text-align: center;
+  }
+}
+
+/* line 1, sass/core/_base-structure.scss */
+.aog-max-size-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 2, sass/mixins/_m-clearfix.scss */
+.aog-max-size-container:before, .aog-max-size-container:after {
+  content: " ";
+  display: block;
+}
+/* line 9, sass/mixins/_m-clearfix.scss */
+.aog-max-size-container:after {
+  clear: both;
+}
+
+/* line 1, sass/core/_base-style.scss */
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, sass/core/_base-style.scss */
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* line 9, sass/core/_base-style.scss */
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.svg#AnonymousPro") format("svg");
+  /* Legacy iOS */
+}
+/* line 1, sass/core/_css-util.scss */
+.no-margin-top {
+  margin-top: 0;
+}
+
+/* line 4, sass/core/_css-util.scss */
+.no-margin-left {
+  margin-left: 0;
+}
+
+/* line 7, sass/core/_css-util.scss */
+.no-margin-right {
+  margin-right: 0;
+}
+
+/* line 10, sass/core/_css-util.scss */
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+/* line 1, sass/components/_components.scss */
+.container {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 7, sass/components/_components.scss */
+.content {
+  width: 700px;
+  height: 200px;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+}
+
+/* line 18, sass/components/_components.scss */
+.single-container {
+  width: 690px;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* line 29, sass/components/_components.scss */
+.thumbnail {
+  width: 198px;
+  height: 198px;
+  float: left;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* line 37, sass/components/_components.scss */
+a.title {
+  font-family: Tahoma, Helvetica, sans-serif;
+  color: #333;
+  text-decoration: none;
+}
+/* line 42, sass/components/_components.scss */
+a.title:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* line 1, sass/components/_taskbar.scss */
+.taskbar {
+  background-color: #003c7f;
+  padding: 24px 0;
+  border-bottom: 3px solid #00305b;
+}
+
+/* line 7, sass/components/_taskbar.scss */
+.logo-header {
+  text-align: center;
+}
+/* line 9, sass/components/_taskbar.scss */
+.logo-header a {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  /* line 7, sass/components/_taskbar.scss */
+  .logo-header {
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  /* line 7, sass/components/_taskbar.scss */
+  .logo-header {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+/* line 24, sass/components/_taskbar.scss */
+.menu-header-wrapper a {
+  color: #f1f1ef;
+}
+/* line 27, sass/components/_taskbar.scss */
+.menu-header-wrapper .menu-header-categories {
+  display: inline-block;
+  border-right: 2px solid #f1f1ef;
+  margin-right: 8px;
+}
+/* line 32, sass/components/_taskbar.scss */
+.menu-header-wrapper .menu-header-categories > li {
+  display: inline-block;
+  margin: 0 12px;
+  line-height: 41px;
+}
+/* line 38, sass/components/_taskbar.scss */
+.menu-header-wrapper .menu-header-categories a {
+  font-family: "Anonymous Pro";
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  /* line 27, sass/components/_taskbar.scss */
+  .menu-header-wrapper .menu-header-categories {
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 2px solid #f1f1ef;
+  }
+}
+/* line 50, sass/components/_taskbar.scss */
+.menu-header-wrapper .social-nav {
+  display: inline-block;
+}
+/* line 53, sass/components/_taskbar.scss */
+.menu-header-wrapper .social-nav > li {
+  display: inline-block;
+  margin: 8px;
+}
+@media (min-width: 768px) {
+  /* line 23, sass/components/_taskbar.scss */
+  .menu-header-wrapper {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  /* line 23, sass/components/_taskbar.scss */
+  .menu-header-wrapper {
+    text-align: center;
+  }
+}
+
+/* line 1, sass/components/_footer.scss */
+.footer {
+  background-color: #001423;
+  text-align: center;
+  padding: 24px 0 32px;
+}
+/* line 6, sass/components/_footer.scss */
+.footer .menu-footer-categories > li {
+  display: inline-block;
+  margin: 0 12px;
+  line-height: 41px;
+}
+/* line 12, sass/components/_footer.scss */
+.footer .menu-footer-categories a {
+  color: #f1f1ef;
+  font-family: "Anonymous Pro";
+  text-transform: uppercase;
+}
+/* line 19, sass/components/_footer.scss */
+.footer figure {
+  margin-top: 24px;
+}
+/* line 21, sass/components/_footer.scss */
+.footer figure a {
+  display: inline-block;
+}

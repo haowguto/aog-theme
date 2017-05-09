@@ -1,0 +1,12 @@
+@mixin m-clearfix {
+    &:before,
+    &:after {
+        // 1
+        content: " ";
+        // 2
+        display: block;
+    }
+    &:after {
+        clear: both;
+    }
+}
