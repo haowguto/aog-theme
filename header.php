@@ -9,6 +9,8 @@
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 
+	<link rel="shortcut icon" href="/aog/wp-content/themes/aog-theme/favicon.ico" type="image/x-icon"/>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

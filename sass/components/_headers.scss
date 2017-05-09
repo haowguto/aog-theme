@@ -1,0 +1,36 @@
+.header-left-titles {
+	background-image: image-url("header-preview.png");
+	.header-title {
+		h1 {
+			font-family: $aog-title-h1;
+			font-size: 84px;
+			margin-top: $spacing-7;
+		}
+
+		h2 {
+			font-family: $aog-title-h2;
+			font-size: 37px;
+			margin: $spacing-5 0;
+		}
+
+		h1, h2 {
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		@media (min-width: $screen-tablet-min) {
+		    width: 736px;
+		    float: left;
+		}
+
+		@media (max-width: $screen-tablet-max) {
+		    float: none;
+		    margin: 0 auto;
+		    
+		    h1, h2 {
+		    	text-align: center;
+		    }
+		}
+	}
+
+}

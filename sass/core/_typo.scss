@@ -1,1 +1,61 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.svg#AnonymousPro") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular.otf");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold.otf");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Bebas Neue Light";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Bebas Neue Thin";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Latin Modern Roman";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.svg#LatinRomanModenr") format("svg");
+  /* Legacy iOS */
+}
+
+
+
 $aog-menu: "Anonymous Pro";
+$aog-title-h1: "Bebas Neue Bold";
+$aog-title-h2: "Latin Modern Roman";

@@ -1,5 +1,15 @@
 <?php get_header(); ?>
-<div class="container">
+
+<header class="header-left-titles">
+	<div class="aog-max-size-container">
+		<div class="header-title">
+			<h1>trabalho há mais de 20 anos com escolas de alto desempenho</h1>
+			<h2>experiência com gestão e organização de escolas com excelência de resultados!</h2>
+		</div>
+	</div>
+</header>
+
+<div class="aog-max-size-container">
 	<?php
 		if(have_posts()) : while (have_posts()) : the_post();
 	?>

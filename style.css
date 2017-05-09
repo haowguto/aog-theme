@@ -393,13 +393,6 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Anonymous Pro";
-  src: url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/anonymous_pro-webfont.svg#AnonymousPro") format("svg");
-  /* Legacy iOS */
-}
 /* line 1, sass/core/_css-util.scss */
 .no-margin-top {
   margin-top: 0;
@@ -420,58 +413,55 @@ a {
   margin-bottom: 0;
 }
 
-/* line 1, sass/components/_components.scss */
-.container {
-  position: relative;
-  width: 1000px;
-  margin: 0 auto;
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.svg#AnonymousPro") format("svg");
+  /* Legacy iOS */
 }
-
-/* line 7, sass/components/_components.scss */
-.content {
-  width: 700px;
-  height: 200px;
-  background-color: #efefef;
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-family: Tahoma, Helvetica, sans-serif;
-  font-size: 13px;
-  color: #333;
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular.otf");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_regular-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
 }
-
-/* line 18, sass/components/_components.scss */
-.single-container {
-  width: 690px;
-  background-color: #efefef;
-  border: 1px solid #ccc;
-  padding: 15px;
-  font-family: Tahoma, Helvetica, sans-serif;
-  font-size: 13px;
-  color: #333;
-  border-radius: 4px;
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold.otf");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_bold-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
 }
-
-/* line 29, sass/components/_components.scss */
-.thumbnail {
-  width: 198px;
-  height: 198px;
-  float: left;
-  border: 1px solid #ccc;
-  margin-right: 10px;
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_book-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
 }
-
-/* line 37, sass/components/_components.scss */
-a.title {
-  font-family: Tahoma, Helvetica, sans-serif;
-  color: #333;
-  text-decoration: none;
+@font-face {
+  font-family: "Bebas Neue Light";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_light-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
 }
-/* line 42, sass/components/_components.scss */
-a.title:hover {
-  color: #000;
-  text-decoration: underline;
+@font-face {
+  font-family: "Bebas Neue Thin";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Bebas-Neue/bebasneue_thin-webfont.svg#Bebasneue") format("svg");
+  /* Legacy iOS */
 }
-
+@font-face {
+  font-family: "Latin Modern Roman";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.svg#LatinRomanModenr") format("svg");
+  /* Legacy iOS */
+}
 /* line 1, sass/components/_taskbar.scss */
 .taskbar {
   background-color: #003c7f;
@@ -577,4 +567,44 @@ a.title:hover {
 /* line 21, sass/components/_footer.scss */
 .footer figure a {
   display: inline-block;
+}
+
+/* line 1, sass/components/_headers.scss */
+.header-left-titles {
+  background-image: url('img/header-preview.png?1494373940');
+}
+/* line 4, sass/components/_headers.scss */
+.header-left-titles .header-title h1 {
+  font-family: "Bebas Neue Bold";
+  font-size: 84px;
+  margin-top: 56px;
+}
+/* line 10, sass/components/_headers.scss */
+.header-left-titles .header-title h2 {
+  font-family: "Latin Modern Roman";
+  font-size: 37px;
+  margin: 40px 0;
+}
+/* line 16, sass/components/_headers.scss */
+.header-left-titles .header-title h1, .header-left-titles .header-title h2 {
+  text-align: left;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  /* line 3, sass/components/_headers.scss */
+  .header-left-titles .header-title {
+    width: 736px;
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  /* line 3, sass/components/_headers.scss */
+  .header-left-titles .header-title {
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 30, sass/components/_headers.scss */
+  .header-left-titles .header-title h1, .header-left-titles .header-title h2 {
+    text-align: center;
+  }
 }
