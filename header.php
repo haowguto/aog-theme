@@ -38,7 +38,7 @@
 			<nav class="menu-header-wrapper">
 				<ul class="menu-header-categories">
 					<li><a href="<?php echo get_option('home'); ?>">Home</a></li>
-					<?php wp_list_categories('title_li=' ); ?>
+					<?php wp_list_pages('title_li=' ); ?>
 				</ul>
 				<ul class="social-nav">
 					<li>

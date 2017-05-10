@@ -18,4 +18,40 @@
 			left: 0;
 		}
 	}
+
+	&.blog-post {
+		.aog-max-size-container {
+			max-width: 739px;
+			padding: $spacing-21 auto $spacing-9;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: $spacing-3;
+		}
+
+		label {
+			margin-bottom: $spacing-4;
+		}
+
+		.thumbnail {
+			width: 100%;
+			max-height: 442px;
+			overflow: hidden;
+			display: block;
+			text-align: center;
+			margin-bottom: $spacing-10;
+
+			img {
+				display: inline-block;
+				width: auto;
+				height: 100%;
+				max-width: 100%;
+			}
+		}
+
+		p {
+			margin-bottom: $spacing-5;
+		}
+	}
 }

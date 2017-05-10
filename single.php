@@ -1,22 +1,20 @@
 <?php get_header(); ?>
 
-<div class="container">
-	<?php
-		if(have_posts()) : while (have_posts()) : the_post();
-	?>
+<main class="main-content blog-post">
+	<div class="aog-max-size-container">
+		<?php
+			if(have_posts()) : while (have_posts()) : the_post();
+		?>
 
-	<div class="single-container">
-		<a href="<?php the_permalink(); ?>" class="title">
-			<h1><?php the_title(); ?></h1>
-		</a>
-		Publicado por <?php the_author(); ?> em: <?php the_time('d/m/Y'); ?>
-		<hr>
-		<?php the_post_thumbnail(); ?>
+		<h1><?php the_title(); ?></h1>
+		<label>
+			Por <?php the_author(); ?>
+		</label>
+
+		<figure class="thumbnail">
+			<?php the_post_thumbnail(); ?>
+		</figure>
 		<?php the_content(); ?>
-	</div>
-
-	<div class="info"></div>
-	<br>
 
 	<?php
 		endwhile;
@@ -26,6 +24,7 @@
 	<?php
 		endif;
 	?>
-</div>
+
+</main>
 
 <?php get_footer(); ?>

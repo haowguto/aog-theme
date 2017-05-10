@@ -579,45 +579,59 @@ a {
 }
 
 /* line 1, sass/components/_headers.scss */
-.header-left-titles {
+.header-left-titles,
+.header-right-titles {
   background-image: url('img/header-preview.png?1494373940');
 }
-/* line 4, sass/components/_headers.scss */
-.header-left-titles .header-title h1 {
+/* line 5, sass/components/_headers.scss */
+.header-left-titles .header-title h1,
+.header-right-titles .header-title h1 {
   font-family: "Bebas Neue Bold";
   font-size: 84px;
   margin-top: 56px;
 }
-/* line 10, sass/components/_headers.scss */
-.header-left-titles .header-title h2 {
+/* line 11, sass/components/_headers.scss */
+.header-left-titles .header-title h2,
+.header-right-titles .header-title h2 {
   font-family: "Latin Modern Roman";
   font-size: 37px;
   margin: 40px 0;
 }
-/* line 16, sass/components/_headers.scss */
-.header-left-titles .header-title h1, .header-left-titles .header-title h2 {
+/* line 17, sass/components/_headers.scss */
+.header-left-titles .header-title h1, .header-left-titles .header-title h2,
+.header-right-titles .header-title h1,
+.header-right-titles .header-title h2 {
   text-align: left;
   text-transform: uppercase;
 }
-@media (min-width: 768px) {
-  /* line 3, sass/components/_headers.scss */
-  .header-left-titles .header-title {
-    width: 736px;
-    float: left;
-  }
-}
 @media (max-width: 767px) {
-  /* line 3, sass/components/_headers.scss */
-  .header-left-titles .header-title {
+  /* line 1, sass/components/_headers.scss */
+  .header-left-titles,
+  .header-right-titles {
     float: none;
     margin: 0 auto;
   }
-  /* line 30, sass/components/_headers.scss */
-  .header-left-titles .header-title h1, .header-left-titles .header-title h2 {
+  /* line 27, sass/components/_headers.scss */
+  .header-left-titles h1, .header-left-titles h2,
+  .header-right-titles h1,
+  .header-right-titles h2 {
     text-align: center;
   }
 }
 
+@media (min-width: 768px) {
+  /* line 37, sass/components/_headers.scss */
+  .header-left-titles .header-title {
+    width: 736px;
+    float: left;
+  }
+
+  /* line 44, sass/components/_headers.scss */
+  .header-right-titles .header-title {
+    width: 736px;
+    float: right;
+  }
+}
 /* line 1, sass/components/_contents.scss */
 .main-content {
   padding: 80px;
@@ -639,6 +653,40 @@ a {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+/* line 23, sass/components/_contents.scss */
+.main-content.blog-post .aog-max-size-container {
+  max-width: 739px;
+  padding: 168px auto 72px;
+}
+/* line 28, sass/components/_contents.scss */
+.main-content.blog-post h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+/* line 33, sass/components/_contents.scss */
+.main-content.blog-post label {
+  margin-bottom: 32px;
+}
+/* line 37, sass/components/_contents.scss */
+.main-content.blog-post .thumbnail {
+  width: 100%;
+  max-height: 442px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  margin-bottom: 80px;
+}
+/* line 45, sass/components/_contents.scss */
+.main-content.blog-post .thumbnail img {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+/* line 53, sass/components/_contents.scss */
+.main-content.blog-post p {
+  margin-bottom: 40px;
 }
 
 /* line 1, sass/components/_buttons.scss */
@@ -742,8 +790,16 @@ a {
   border-radius: 3px;
   background-color: #bcbcbc;
   overflow: hidden;
+  text-align: center;
 }
 /* line 18, sass/components/_posts-preview.scss */
+.post-preview .thumbnail img {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+}
+/* line 26, sass/components/_posts-preview.scss */
 .post-preview .preview-post-title {
   font-family: "Latin Modern Roman";
   font-size: 30px;
@@ -751,17 +807,17 @@ a {
   margin-bottom: 24px;
   display: block;
 }
-/* line 26, sass/components/_posts-preview.scss */
+/* line 34, sass/components/_posts-preview.scss */
 .post-preview .btn {
   margin-top: 48px;
 }
 @media (min-width: 768px) {
-  /* line 31, sass/components/_posts-preview.scss */
+  /* line 39, sass/components/_posts-preview.scss */
   .post-preview .thumbnail {
     display: table-cell;
     width: 50%;
   }
-  /* line 36, sass/components/_posts-preview.scss */
+  /* line 44, sass/components/_posts-preview.scss */
   .post-preview .post-preview-text {
     display: table-cell;
     vertical-align: top;
@@ -769,7 +825,7 @@ a {
   }
 }
 @media (max-width: 767px) {
-  /* line 44, sass/components/_posts-preview.scss */
+  /* line 52, sass/components/_posts-preview.scss */
   .post-preview .thumbnail {
     width: 100%;
     max-height: 554px;
