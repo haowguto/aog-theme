@@ -1,35 +1,33 @@
 <?php get_header(); ?>
-<div class="container">
-	<?php
-		if(have_posts()) : while (have_posts()) : the_post();
-	?>
+<main class="main-content">
+	<div class="aog-max-size-container">
+		<h2 class="main-title">experiências e aprendizados</h2>
 
-		<a href="<?php the_permalink(); ?>" class="title">
-			<h3><?php the_title(); ?></h3>
-		</a>
+		<?php
+			if(have_posts()) : while (have_posts()) : the_post();
+		?>
+		
+		<div class="post-preview">
+			<div class="thumbnail"><?php the_post_thumbnail(array(198,198)); ?></div>
+			<div class="post-preview-text">
+				<a href="<?php the_permalink(); ?>" class="preview-post-title">
+					<h3><?php the_title(); ?></h3>
+				</a>
 
-		TESTE
-	
-	<div class="content">
-		<div class="thumbnail"><?php the_post_thumbnail(array(198,198)); ?></div>
-		<?php the_excerpt(); ?>
-		<br>
-		<br>
-		<a href="<?php the_permalink(); ?>">Continuar lendo -></a>
-		Publicado em: <?php the_time("d/m/Y") ?> às <?php the_time("g:i a") ?> Na categoria <?php the_category(); ?> - <?php comments_number("Nenhum comentário", "1 Comentário", "% comentários"); ?>
+				<?php the_excerpt(); ?>
+				<a href="<?php the_permalink(); ?>" class="btn btn-orange">Leia agora</a>
+			</div>
+		</div>
+
+		<?php
+			endwhile;
+			else:
+		?>
+
+		<?php
+			endif;
+		?>
 	</div>
-
-	<div class="info"></div>
-	<br>
-
-	<?php
-		endwhile;
-		else:
-	?>
-
-	<?php
-		endif;
-	?>
-</div>
+</main>
 
 <?php get_footer(); ?>

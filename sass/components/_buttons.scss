@@ -1,0 +1,30 @@
+.btn {
+    font-family: $aog-anonymous-pro-bold;
+    color: $aog-white;
+    font-size: 23px;
+    text-align: center;
+    display: inline-block;
+    @include border-radius(3px);
+    padding: $spacing-2;
+    cursor: pointer;
+    position: relative;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &.disabled,
+    &[disabled] {
+        cursor: not-allowed;
+        pointer-events: none;
+        @include opacity(.6);
+    }
+
+    &.btn-small {
+        padding: $spacing-1;
+    }
+
+    &.btn-orange {
+        @include m-btn-gradient($aog-orange, $aog-white);
+    }
+}

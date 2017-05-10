@@ -1,0 +1,49 @@
+.post-preview {
+	display: table;
+	padding-bottom: $spacing-4;
+	margin-bottom: $spacing-4;
+	border-bottom: 1px solid $aog-gray;
+
+	&:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	.thumbnail {
+		@include border-radius(3px);
+		background-color: $aog-gray;
+		overflow: hidden;
+	}
+
+	.preview-post-title {
+		font-family: $aog-latin-modern-roman;
+		font-size: 30px;
+		color: $aog-black;
+		margin-bottom: $spacing-3;
+		display: block;
+	}
+
+	.btn {
+		margin-top: $spacing-6;
+	}
+
+	@media (min-width: $screen-tablet-min) {
+	    .thumbnail {
+			display: table-cell;
+			width: 50%;
+	    }
+
+	    .post-preview-text {
+			display: table-cell;
+			vertical-align: top;
+			padding-left: $spacing-4;
+	    }
+	}
+
+	@media (max-width: $screen-tablet-max) {
+	    .thumbnail {
+			width: 100%;
+			max-height: 554px;
+	    }
+	}
+}

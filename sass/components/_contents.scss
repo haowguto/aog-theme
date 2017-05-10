@@ -1,0 +1,21 @@
+.main-content {
+	padding: $spacing-10;
+
+	.main-title {
+		font-family: $aog-bebas-neue-bold;
+		font-size: 84px;
+		position: relative;
+		margin-bottom: $spacing-6;
+
+		&::after {
+			content: "";
+			display: block;
+			background-color: $aog-orange;
+			width: 120px;
+			height: 4px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}

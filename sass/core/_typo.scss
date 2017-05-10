@@ -1,8 +1,18 @@
 @font-face {
   font-family: "Anonymous Pro";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/Anonymous_Pro.ttf");
   src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.eot");
   /* IE9 Compat Modes */
   src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro-webfont.svg#AnonymousPro") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Anonymous Pro Bold";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/Anonymous_Pro_Bold.ttf");
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro_b-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro_b-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro_b-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro_b-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Anonymous-Pro/anonymous_pro_b-webfont.svg#AnonymousProBold") format("svg");
   /* Legacy iOS */
 }
 
@@ -56,6 +66,7 @@
 
 
 
-$aog-menu: "Anonymous Pro";
-$aog-title-h1: "Bebas Neue Bold";
-$aog-title-h2: "Latin Modern Roman";
+$aog-anonymous-pro: "Anonymous Pro";
+$aog-anonymous-pro-bold: "Anonymous Pro Bold";
+$aog-bebas-neue-bold: "Bebas Neue Bold";
+$aog-latin-modern-roman: "Latin Modern Roman";
