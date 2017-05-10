@@ -1,0 +1,66 @@
+.contact {
+	.left-contact {
+		width: 50%;
+		float: left;
+
+		& > .conteudo h1 {
+			display: none;
+		}
+
+		@media (max-width: $screen-tablet-max) {
+			width: 100%;
+		}
+	}
+
+	.right-thumbnail {
+		width: 50%;
+		max-width: 669px;
+		text-align: center;
+		background-color: $aog-gray;
+		float: right;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+		@media (max-width: $screen-tablet-max) {
+			width: 100%;
+		}
+	}
+
+	.contact-title-1 {
+		font-family: $aog-bebas-neue-bold;
+		font-size: 84px;
+		line-height: .7;
+		margin-bottom: $spacing-4;
+	}
+
+	.contact-title-2 {
+		font-family: $aog-latin-modern-roman;
+		font-size: 25px;
+		margin-bottom: $spacing-8;
+	}
+
+	// Contact form 7
+	.wpcf7-form {
+		color: $aog-blue-3;
+		font-size: 20px;
+		font-family: $aog-bebas-neue;
+
+		label {
+			margin-bottom: $spacing-3;
+			display: block;
+			padding-right: $spacing-2;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			border: 1px solid $aog-gray-3;
+			@include border-radius(3px);
+			margin-top: $spacing-1;
+			padding: $spacing-1;
+		}
+	}
+}

@@ -15,7 +15,6 @@
 		}
 
 		h1, h2 {
-			text-align: left;
 			text-transform: uppercase;
 		}
 	}
@@ -37,13 +36,21 @@
     	.header-title {
 	    	width: 736px;
 	    	float: left;
+
+	    	h1, h2 {
+	    		text-align: left;
+	    	}
     	}
     }
 
     .header-right-titles {
     	.header-title {
-	    	width: 736px;
+	    	width: 642px;
 	    	float: right;
+
+	    	h1, h2 {
+	    		text-align: right;
+	    	}
     	}
     }
 }

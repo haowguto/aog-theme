@@ -14,8 +14,17 @@
 			width: 120px;
 			height: 4px;
 			position: absolute;
-			bottom: 0;
+			bottom: -$spacing-1;
 			left: 0;
+		}
+
+		&.centered {
+			text-align: center;
+
+			&::after {
+				left: 50%;
+				margin-left: -60px;
+			}
 		}
 	}
 
