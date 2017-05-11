@@ -13,22 +13,7 @@
 	<div class="aog-max-size-container">
 		<h3>ASSINE A NEWSLETTER E SAIBA TUDO PARA TER UMA ESCOLA DE ALTO DESEMPENHO</h3>
 		<h4>SEMPRE QUE EU TIVER ALGUMA NOVIDADE, VOCÊ SERÁ A PRIMEIRA PESSOA A SABER!</h4>
-
-		<div class="newsletter-inputs">
-			<label>
-				<p>Seu nome:</p>
-				<input type="text">
-			</label>
-			<label>
-				<p>Seu e-mail:</p>
-				<input type="text">
-			</label>
-			<label>
-				<p>Seu cargo na escola:</p>
-				<input type="text">
-			</label>
-			<button class="btn btn-orange">SIM, EU QUERO ASSINAR</button>
-		</div>
+		<?php echo do_shortcode( '[contact-form-7 id="11" title="Assine minha newsletter e saiba tudo sobre escola de alto desempenho" html_class="newsletter-inputs"]' ); ?>
 	</div>
 </div>
 
@@ -90,22 +75,7 @@
 	<div class="aog-max-size-container">
 		<h3>ASSINE A NEWSLETTER E SAIBA TUDO PARA TER UMA ESCOLA DE ALTO DESEMPENHO</h3>
 		<h4>SEMPRE QUE EU TIVER ALGUMA NOVIDADE, VOCÊ SERÁ A PRIMEIRA PESSOA A SABER!</h4>
-
-		<div class="newsletter-inputs">
-			<label>
-				<p>Seu nome:</p>
-				<input type="text">
-			</label>
-			<label>
-				<p>Seu e-mail:</p>
-				<input type="text">
-			</label>
-			<label>
-				<p>Seu cargo na escola:</p>
-				<input type="text">
-			</label>
-			<button class="btn btn-orange">SIM, EU QUERO ASSINAR</button>
-		</div>
+		<?php echo do_shortcode( '[contact-form-7 id="11" title="Assine minha newsletter e saiba tudo sobre escola de alto desempenho" html_class="newsletter-inputs"]' ); ?>
 	</div>
 </div>
 

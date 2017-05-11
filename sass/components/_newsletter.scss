@@ -20,26 +20,29 @@
 	}
 
 	.newsletter-inputs {
-		label {
+		p {
+			max-width: 270px;
 			@include box-shadow(1px 1px $aog-blue-4);
 			display: inline-block;
-			width: 246px;
 			text-align: left;
 			padding: 0 $spacing-1 $spacing-2 0;
+			position: relative;
 
 			@media (max-width: $screen-tablet-max) {
 				width: 100%;
 			}
 		}
 
-		p {
+		label {
 			font-family: $aog-bebas-neue;
 			font-size: 20px;
 			color: $aog-white;
 			text-shadow: 1px 1px $aog-blue-4;
 		}
 
-		input {
+		input[type="text"],
+		input[type="email"],
+		select {
 			width: 100%;
 			@include border-radius(3px);
 			@include box-shadow(1px 1px $aog-blue-4);
@@ -48,11 +51,44 @@
 			margin-top: $spacing-1;
 		}
 
+		.btn {
+			top: 26px;
+		}
+
+		span.wpcf7-not-valid-tip {
+			color: $aog-yellow;
+			position: absolute;
+			bottom: -$spacing-6;
+		}
+
+		div.wpcf7-validation-errors {
+			border: none;
+			@include border-radius(3px);
+			background-color: $aog-yellow;
+			color: $aog-black;
+			font-family: $aog-bebas-neue-bold;
+			text-shadow: 1px 1px $aog-white;
+			font-size: 30px;
+			padding: 17px;
+		}
+
+		.wpcf7-not-valid {
+			border-color: #ff0000;
+			@include box-shadow(1px 1px 2px inset #ff0000);
+		}
+
 	}
 
 	@media (max-width: $screen-tablet-max) {
 		.btn {
 			margin: $spacing-4 auto;
+		}
+		
+		span.wpcf7-not-valid-tip {
+			bottom: auto;
+			margin-left: 11px;
+			display: inline-block;
+			top: -9px;
 		}
 	}
 	

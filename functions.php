@@ -1,5 +1,6 @@
 <?php
 	add_theme_support('post-thumbnails');
+	add_theme_support( 'custom-logo' );
 ?>
 
 <?php
@@ -7,3 +8,5 @@
 		'top'    => __( 'Top Menu', 'aog-theme' ),
 	) );
 ?>
+
+<?php require 'customizer.php'; ?>

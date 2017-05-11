@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<header class="header-right-titles">
+<header class="header-left-titles">
   <div class="aog-max-size-container">
     <div class="header-title">
       <h1>ANDRÉ GUADALUPE</h1>

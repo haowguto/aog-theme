@@ -1,8 +1,10 @@
 .header-left-titles,
 .header-right-titles {
-	background-image: image-url("header-preview.png");
+	background-image: image-url("header.jpg");
+	background-size: cover;
 	display: inline-block;
 	width: 100%;
+	min-height: 500px;
 
 	.header-title {
 		h1 {

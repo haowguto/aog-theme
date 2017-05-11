@@ -609,25 +609,27 @@ a {
 /* line 1, sass/components/_headers.scss */
 .header-left-titles,
 .header-right-titles {
-  background-image: url('img/header-preview.png?1494373940');
+  background-image: url('img/header.jpg?1494424453');
+  background-size: cover;
   display: inline-block;
   width: 100%;
+  min-height: 500px;
 }
-/* line 8, sass/components/_headers.scss */
+/* line 10, sass/components/_headers.scss */
 .header-left-titles .header-title h1,
 .header-right-titles .header-title h1 {
   font-family: "Bebas Neue Bold";
   font-size: 84px;
   margin-top: 56px;
 }
-/* line 14, sass/components/_headers.scss */
+/* line 16, sass/components/_headers.scss */
 .header-left-titles .header-title h2,
 .header-right-titles .header-title h2 {
   font-family: "Latin Modern Roman";
   font-size: 37px;
   margin: 40px 0;
 }
-/* line 20, sass/components/_headers.scss */
+/* line 22, sass/components/_headers.scss */
 .header-left-titles .header-title h1, .header-left-titles .header-title h2,
 .header-right-titles .header-title h1,
 .header-right-titles .header-title h2 {
@@ -640,7 +642,7 @@ a {
     float: none;
     margin: 0 auto;
   }
-  /* line 29, sass/components/_headers.scss */
+  /* line 31, sass/components/_headers.scss */
   .header-left-titles h1, .header-left-titles h2,
   .header-right-titles h1,
   .header-right-titles h2 {
@@ -649,22 +651,22 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 39, sass/components/_headers.scss */
+  /* line 41, sass/components/_headers.scss */
   .header-left-titles .header-title {
     width: 736px;
     float: left;
   }
-  /* line 43, sass/components/_headers.scss */
+  /* line 45, sass/components/_headers.scss */
   .header-left-titles .header-title h1, .header-left-titles .header-title h2 {
     text-align: left;
   }
 
-  /* line 50, sass/components/_headers.scss */
+  /* line 52, sass/components/_headers.scss */
   .header-right-titles .header-title {
     width: 642px;
     float: right;
   }
-  /* line 54, sass/components/_headers.scss */
+  /* line 56, sass/components/_headers.scss */
   .header-right-titles .header-title h1, .header-right-titles .header-title h2 {
     text-align: right;
   }
@@ -894,14 +896,16 @@ a {
 /* line 1, sass/components/_meet-andre.scss */
 .meet-andre-wrapper {
   background-color: #353a36;
+  background-image: url('img/Footer.jpg?1494424438');
+  background-size: cover;
   display: inline-block;
   width: 100%;
 }
-/* line 6, sass/components/_meet-andre.scss */
+/* line 8, sass/components/_meet-andre.scss */
 .meet-andre-wrapper .aog-max-size-container {
   position: relative;
 }
-/* line 9, sass/components/_meet-andre.scss */
+/* line 11, sass/components/_meet-andre.scss */
 .meet-andre-wrapper .aog-max-size-container::before {
   visibility: visible;
   content: "";
@@ -914,46 +918,46 @@ a {
   top: 0;
   margin: 0 auto;
 }
-/* line 22, sass/components/_meet-andre.scss */
+/* line 24, sass/components/_meet-andre.scss */
 .meet-andre-wrapper .meet-andre-right {
   text-align: center;
   margin: 200px 0 168px;
 }
-/* line 27, sass/components/_meet-andre.scss */
+/* line 29, sass/components/_meet-andre.scss */
 .meet-andre-wrapper h2 {
   color: #f4d300;
   font-size: 90px;
   font-family: "Bebas Neue Bold";
   margin-bottom: 24px;
 }
-/* line 34, sass/components/_meet-andre.scss */
+/* line 36, sass/components/_meet-andre.scss */
 .meet-andre-wrapper p {
   color: #ffffff;
   font-size: 18px;
 }
-/* line 39, sass/components/_meet-andre.scss */
+/* line 41, sass/components/_meet-andre.scss */
 .meet-andre-wrapper footer {
   display: block;
   margin-top: 56px;
 }
-/* line 44, sass/components/_meet-andre.scss */
+/* line 46, sass/components/_meet-andre.scss */
 .meet-andre-wrapper label {
   color: #f4d300;
   font-size: 17px;
   display: inline-block;
 }
-/* line 50, sass/components/_meet-andre.scss */
+/* line 52, sass/components/_meet-andre.scss */
 .meet-andre-wrapper ul.meet-andre-social-nav {
   display: inline-block;
 }
-/* line 52, sass/components/_meet-andre.scss */
+/* line 54, sass/components/_meet-andre.scss */
 .meet-andre-wrapper ul.meet-andre-social-nav li,
 .meet-andre-wrapper ul.meet-andre-social-nav a {
   color: #f4d300;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 60, sass/components/_meet-andre.scss */
+  /* line 62, sass/components/_meet-andre.scss */
   .meet-andre-wrapper .meet-andre-right {
     text-align: left;
     width: 554px;
@@ -1055,30 +1059,33 @@ a {
   margin: 16px 0 32px;
 }
 /* line 23, sass/components/_newsletter.scss */
-.newsletter .newsletter-inputs label {
+.newsletter .newsletter-inputs p {
+  max-width: 270px;
   -moz-box-shadow: 1px 1px #00305b;
   -webkit-box-shadow: 1px 1px #00305b;
   box-shadow: 1px 1px #00305b;
   display: inline-block;
-  width: 246px;
   text-align: left;
   padding: 0 8px 16px 0;
+  position: relative;
 }
 @media (max-width: 767px) {
   /* line 23, sass/components/_newsletter.scss */
-  .newsletter .newsletter-inputs label {
+  .newsletter .newsletter-inputs p {
     width: 100%;
   }
 }
-/* line 35, sass/components/_newsletter.scss */
-.newsletter .newsletter-inputs p {
+/* line 36, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs label {
   font-family: "Bebas Neue";
   font-size: 20px;
   color: #ffffff;
   text-shadow: 1px 1px #00305b;
 }
-/* line 42, sass/components/_newsletter.scss */
-.newsletter .newsletter-inputs input {
+/* line 43, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs input[type="text"],
+.newsletter .newsletter-inputs input[type="email"],
+.newsletter .newsletter-inputs select {
   width: 100%;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1090,9 +1097,46 @@ a {
   padding: 8px;
   margin-top: 8px;
 }
+/* line 54, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs .btn {
+  top: 26px;
+}
+/* line 58, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs span.wpcf7-not-valid-tip {
+  color: #f4d300;
+  position: absolute;
+  bottom: -48px;
+}
+/* line 64, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs div.wpcf7-validation-errors {
+  border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #f4d300;
+  color: #111111;
+  font-family: "Bebas Neue Bold";
+  text-shadow: 1px 1px #ffffff;
+  font-size: 30px;
+  padding: 17px;
+}
+/* line 75, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs .wpcf7-not-valid {
+  border-color: #ff0000;
+  -moz-box-shadow: 1px 1px 2px inset #ff0000;
+  -webkit-box-shadow: 1px 1px 2px inset #ff0000;
+  box-shadow: 1px 1px 2px inset #ff0000;
+}
 @media (max-width: 767px) {
-  /* line 54, sass/components/_newsletter.scss */
+  /* line 83, sass/components/_newsletter.scss */
   .newsletter .btn {
     margin: 32px auto;
+  }
+  /* line 87, sass/components/_newsletter.scss */
+  .newsletter span.wpcf7-not-valid-tip {
+    bottom: auto;
+    margin-left: 11px;
+    display: inline-block;
+    top: -9px;
   }
 }
