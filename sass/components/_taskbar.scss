@@ -25,25 +25,35 @@
 		color: $aog-white;
 	}
 	.menu-header-categories {
-		display: inline-block;
-		border-right: 2px solid $aog-white;
-		margin-right: $spacing-1;
-
-		& > li {
+		@media (min-width: $screen-tablet-min) {
 			display: inline-block;
-			margin: 0 $spacing-3/2;
-			line-height: 41px;
-		}
-
-		a {
-			font-family: $aog-anonymous-pro;
-			text-transform: uppercase;
 		}
 
 		@media (max-width: $screen-tablet-max) {
-			margin-right: 0;
-		    border-right: none;
-		    border-bottom: 2px solid $aog-white;
+			margin: $spacing-3 auto;
+		}
+
+		.menu {
+			display: inline-block;
+			border-right: 2px solid $aog-white;
+			margin-right: $spacing-1;
+
+			& > li {
+				display: inline-block;
+				margin: 0 $spacing-3/2;
+				line-height: 41px;
+			}
+
+			a {
+				font-family: $aog-anonymous-pro;
+				text-transform: uppercase;
+			}
+
+			@media (max-width: $screen-tablet-max) {
+				margin-right: 0;
+			    border-right: none;
+			    border-bottom: 2px solid $aog-white;
+			}
 		}
 	}
 

@@ -5,6 +5,7 @@
     text-align: center;
     display: inline-block;
     @include border-radius(3px);
+    border: none;
     padding: $spacing-2;
     cursor: pointer;
     position: relative;

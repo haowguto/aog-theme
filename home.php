@@ -9,6 +9,29 @@
 	</div>
 </header>
 
+<div class="newsletter">
+	<div class="aog-max-size-container">
+		<h3>ASSINE A NEWSLETTER E SAIBA TUDO PARA TER UMA ESCOLA DE ALTO DESEMPENHO</h3>
+		<h4>SEMPRE QUE EU TIVER ALGUMA NOVIDADE, VOCÊ SERÁ A PRIMEIRA PESSOA A SABER!</h4>
+
+		<div class="newsletter-inputs">
+			<label>
+				<p>Seu nome:</p>
+				<input type="text">
+			</label>
+			<label>
+				<p>Seu e-mail:</p>
+				<input type="text">
+			</label>
+			<label>
+				<p>Seu cargo na escola:</p>
+				<input type="text">
+			</label>
+			<button class="btn btn-orange">SIM, EU QUERO ASSINAR</button>
+		</div>
+	</div>
+</div>
+
 <main class="main-content">
 	<div class="aog-max-size-container">
 		<h2 class="main-title">EXPERIÊNCIAS E APRENDIZADOS</h2>
@@ -59,6 +82,29 @@
 					</li>
 				</ul>
 			</footer>
+		</div>
+	</div>
+</div>
+
+<div class="newsletter">
+	<div class="aog-max-size-container">
+		<h3>ASSINE A NEWSLETTER E SAIBA TUDO PARA TER UMA ESCOLA DE ALTO DESEMPENHO</h3>
+		<h4>SEMPRE QUE EU TIVER ALGUMA NOVIDADE, VOCÊ SERÁ A PRIMEIRA PESSOA A SABER!</h4>
+
+		<div class="newsletter-inputs">
+			<label>
+				<p>Seu nome:</p>
+				<input type="text">
+			</label>
+			<label>
+				<p>Seu e-mail:</p>
+				<input type="text">
+			</label>
+			<label>
+				<p>Seu cargo na escola:</p>
+				<input type="text">
+			</label>
+			<button class="btn btn-orange">SIM, EU QUERO ASSINAR</button>
 		</div>
 	</div>
 </div>

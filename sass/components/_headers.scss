@@ -1,6 +1,9 @@
 .header-left-titles,
 .header-right-titles {
 	background-image: image-url("header-preview.png");
+	display: inline-block;
+	width: 100%;
+
 	.header-title {
 		h1 {
 			font-family: $aog-bebas-neue-bold;

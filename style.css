@@ -471,6 +471,22 @@ a {
   src: url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Latin-Modern-Roman/lmroman10-regular-webfont.svg#LatinRomanModenr") format("svg");
   /* Legacy iOS */
 }
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/OpenSans-Regular.ttf");
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.svg#OpenSansRegular") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/Ubuntu-Bold.ttf");
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.svg#OpenSansRegular") format("svg");
+  /* Legacy iOS */
+}
 /* line 1, sass/components/_taskbar.scss */
 .taskbar {
   background-color: #003c7f;
@@ -504,36 +520,48 @@ a {
 .menu-header-wrapper a {
   color: #ffffff;
 }
-/* line 27, sass/components/_taskbar.scss */
-.menu-header-wrapper .menu-header-categories {
-  display: inline-block;
-  border-right: 2px solid #ffffff;
-  margin-right: 8px;
-}
-/* line 32, sass/components/_taskbar.scss */
-.menu-header-wrapper .menu-header-categories > li {
-  display: inline-block;
-  margin: 0 12px;
-  line-height: 41px;
-}
-/* line 38, sass/components/_taskbar.scss */
-.menu-header-wrapper .menu-header-categories a {
-  font-family: "Anonymous Pro";
-  text-transform: uppercase;
+@media (min-width: 768px) {
+  /* line 27, sass/components/_taskbar.scss */
+  .menu-header-wrapper .menu-header-categories {
+    display: inline-block;
+  }
 }
 @media (max-width: 767px) {
   /* line 27, sass/components/_taskbar.scss */
   .menu-header-wrapper .menu-header-categories {
+    margin: 24px auto;
+  }
+}
+/* line 36, sass/components/_taskbar.scss */
+.menu-header-wrapper .menu-header-categories .menu {
+  display: inline-block;
+  border-right: 2px solid #ffffff;
+  margin-right: 8px;
+}
+/* line 41, sass/components/_taskbar.scss */
+.menu-header-wrapper .menu-header-categories .menu > li {
+  display: inline-block;
+  margin: 0 12px;
+  line-height: 41px;
+}
+/* line 47, sass/components/_taskbar.scss */
+.menu-header-wrapper .menu-header-categories .menu a {
+  font-family: "Anonymous Pro";
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  /* line 36, sass/components/_taskbar.scss */
+  .menu-header-wrapper .menu-header-categories .menu {
     margin-right: 0;
     border-right: none;
     border-bottom: 2px solid #ffffff;
   }
 }
-/* line 50, sass/components/_taskbar.scss */
+/* line 60, sass/components/_taskbar.scss */
 .menu-header-wrapper .social-nav {
   display: inline-block;
 }
-/* line 53, sass/components/_taskbar.scss */
+/* line 63, sass/components/_taskbar.scss */
 .menu-header-wrapper .social-nav > li {
   display: inline-block;
   margin: 8px;
@@ -557,23 +585,23 @@ a {
   text-align: center;
   padding: 24px 0 32px;
 }
-/* line 6, sass/components/_footer.scss */
-.footer .menu-footer-categories > li {
+/* line 8, sass/components/_footer.scss */
+.footer .menu-footer-categories .menu li {
   display: inline-block;
   margin: 0 12px;
   line-height: 41px;
 }
-/* line 12, sass/components/_footer.scss */
-.footer .menu-footer-categories a {
+/* line 14, sass/components/_footer.scss */
+.footer .menu-footer-categories .menu a {
   color: #ffffff;
   font-family: "Anonymous Pro";
   text-transform: uppercase;
 }
-/* line 19, sass/components/_footer.scss */
+/* line 23, sass/components/_footer.scss */
 .footer figure {
   margin-top: 24px;
 }
-/* line 21, sass/components/_footer.scss */
+/* line 25, sass/components/_footer.scss */
 .footer figure a {
   display: inline-block;
 }
@@ -582,22 +610,24 @@ a {
 .header-left-titles,
 .header-right-titles {
   background-image: url('img/header-preview.png?1494373940');
+  display: inline-block;
+  width: 100%;
 }
-/* line 5, sass/components/_headers.scss */
+/* line 8, sass/components/_headers.scss */
 .header-left-titles .header-title h1,
 .header-right-titles .header-title h1 {
   font-family: "Bebas Neue Bold";
   font-size: 84px;
   margin-top: 56px;
 }
-/* line 11, sass/components/_headers.scss */
+/* line 14, sass/components/_headers.scss */
 .header-left-titles .header-title h2,
 .header-right-titles .header-title h2 {
   font-family: "Latin Modern Roman";
   font-size: 37px;
   margin: 40px 0;
 }
-/* line 17, sass/components/_headers.scss */
+/* line 20, sass/components/_headers.scss */
 .header-left-titles .header-title h1, .header-left-titles .header-title h2,
 .header-right-titles .header-title h1,
 .header-right-titles .header-title h2 {
@@ -610,7 +640,7 @@ a {
     float: none;
     margin: 0 auto;
   }
-  /* line 26, sass/components/_headers.scss */
+  /* line 29, sass/components/_headers.scss */
   .header-left-titles h1, .header-left-titles h2,
   .header-right-titles h1,
   .header-right-titles h2 {
@@ -619,22 +649,22 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 36, sass/components/_headers.scss */
+  /* line 39, sass/components/_headers.scss */
   .header-left-titles .header-title {
     width: 736px;
     float: left;
   }
-  /* line 40, sass/components/_headers.scss */
+  /* line 43, sass/components/_headers.scss */
   .header-left-titles .header-title h1, .header-left-titles .header-title h2 {
     text-align: left;
   }
 
-  /* line 47, sass/components/_headers.scss */
+  /* line 50, sass/components/_headers.scss */
   .header-right-titles .header-title {
     width: 642px;
     float: right;
   }
-  /* line 51, sass/components/_headers.scss */
+  /* line 54, sass/components/_headers.scss */
   .header-right-titles .header-title h1, .header-right-titles .header-title h2 {
     text-align: right;
   }
@@ -677,14 +707,15 @@ a {
 }
 /* line 37, sass/components/_contents.scss */
 .main-content.blog-post h1 {
+  font-family: "Ubuntu Bold";
   font-size: 36px;
   margin-bottom: 24px;
 }
-/* line 42, sass/components/_contents.scss */
+/* line 43, sass/components/_contents.scss */
 .main-content.blog-post label {
   margin-bottom: 32px;
 }
-/* line 46, sass/components/_contents.scss */
+/* line 47, sass/components/_contents.scss */
 .main-content.blog-post .thumbnail {
   width: 100%;
   max-height: 442px;
@@ -693,15 +724,19 @@ a {
   text-align: center;
   margin-bottom: 80px;
 }
-/* line 54, sass/components/_contents.scss */
+/* line 55, sass/components/_contents.scss */
 .main-content.blog-post .thumbnail img {
   display: inline-block;
   width: auto;
   height: 100%;
   max-width: 100%;
 }
-/* line 62, sass/components/_contents.scss */
+/* line 63, sass/components/_contents.scss */
 .main-content.blog-post p {
+  font-family: "Open Sans Regular";
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: justify;
   margin-bottom: 40px;
 }
 
@@ -715,26 +750,27 @@ a {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  border: none;
   padding: 16px;
   cursor: pointer;
   position: relative;
 }
-/* line 12, sass/components/_buttons.scss */
+/* line 13, sass/components/_buttons.scss */
 .btn:active, .btn:focus {
   outline: none;
 }
-/* line 16, sass/components/_buttons.scss */
+/* line 17, sass/components/_buttons.scss */
 .btn.disabled, .btn[disabled] {
   cursor: not-allowed;
   pointer-events: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 23, sass/components/_buttons.scss */
+/* line 24, sass/components/_buttons.scss */
 .btn.btn-small {
   padding: 8px;
 }
-/* line 27, sass/components/_buttons.scss */
+/* line 28, sass/components/_buttons.scss */
 .btn.btn-orange {
   text-shadow: 0 -1px 0 rgba(17, 17, 17, 0.2);
   color: #ffffff;
@@ -812,10 +848,11 @@ a {
 .post-preview .thumbnail img {
   display: inline-block;
   width: auto;
-  height: 100%;
   max-width: 100%;
+  height: 100%;
+  max-height: 331px;
 }
-/* line 26, sass/components/_posts-preview.scss */
+/* line 27, sass/components/_posts-preview.scss */
 .post-preview .preview-post-title {
   font-family: "Latin Modern Roman";
   font-size: 30px;
@@ -823,17 +860,23 @@ a {
   margin-bottom: 24px;
   display: block;
 }
-/* line 34, sass/components/_posts-preview.scss */
+/* line 36, sass/components/_posts-preview.scss */
+.post-preview p {
+  font-family: "Open Sans Regular";
+  font-size: 16px;
+  line-height: 1.4;
+}
+/* line 43, sass/components/_posts-preview.scss */
 .post-preview .btn {
   margin-top: 48px;
 }
 @media (min-width: 768px) {
-  /* line 39, sass/components/_posts-preview.scss */
+  /* line 48, sass/components/_posts-preview.scss */
   .post-preview .thumbnail {
     display: table-cell;
     width: 50%;
   }
-  /* line 44, sass/components/_posts-preview.scss */
+  /* line 53, sass/components/_posts-preview.scss */
   .post-preview .post-preview-text {
     display: table-cell;
     vertical-align: top;
@@ -841,7 +884,7 @@ a {
   }
 }
 @media (max-width: 767px) {
-  /* line 52, sass/components/_posts-preview.scss */
+  /* line 61, sass/components/_posts-preview.scss */
   .post-preview .thumbnail {
     width: 100%;
     max-height: 554px;
@@ -851,12 +894,14 @@ a {
 /* line 1, sass/components/_meet-andre.scss */
 .meet-andre-wrapper {
   background-color: #353a36;
+  display: inline-block;
+  width: 100%;
 }
-/* line 4, sass/components/_meet-andre.scss */
+/* line 6, sass/components/_meet-andre.scss */
 .meet-andre-wrapper .aog-max-size-container {
   position: relative;
 }
-/* line 7, sass/components/_meet-andre.scss */
+/* line 9, sass/components/_meet-andre.scss */
 .meet-andre-wrapper .aog-max-size-container::before {
   visibility: visible;
   content: "";
@@ -869,46 +914,46 @@ a {
   top: 0;
   margin: 0 auto;
 }
-/* line 20, sass/components/_meet-andre.scss */
+/* line 22, sass/components/_meet-andre.scss */
 .meet-andre-wrapper .meet-andre-right {
   text-align: center;
   margin: 200px 0 168px;
 }
-/* line 25, sass/components/_meet-andre.scss */
+/* line 27, sass/components/_meet-andre.scss */
 .meet-andre-wrapper h2 {
   color: #f4d300;
   font-size: 90px;
   font-family: "Bebas Neue Bold";
   margin-bottom: 24px;
 }
-/* line 32, sass/components/_meet-andre.scss */
+/* line 34, sass/components/_meet-andre.scss */
 .meet-andre-wrapper p {
   color: #ffffff;
   font-size: 18px;
 }
-/* line 37, sass/components/_meet-andre.scss */
+/* line 39, sass/components/_meet-andre.scss */
 .meet-andre-wrapper footer {
   display: block;
   margin-top: 56px;
 }
-/* line 42, sass/components/_meet-andre.scss */
+/* line 44, sass/components/_meet-andre.scss */
 .meet-andre-wrapper label {
   color: #f4d300;
   font-size: 17px;
   display: inline-block;
 }
-/* line 48, sass/components/_meet-andre.scss */
+/* line 50, sass/components/_meet-andre.scss */
 .meet-andre-wrapper ul.meet-andre-social-nav {
   display: inline-block;
 }
-/* line 50, sass/components/_meet-andre.scss */
+/* line 52, sass/components/_meet-andre.scss */
 .meet-andre-wrapper ul.meet-andre-social-nav li,
 .meet-andre-wrapper ul.meet-andre-social-nav a {
   color: #f4d300;
   display: inline-block;
 }
 @media (min-width: 768px) {
-  /* line 58, sass/components/_meet-andre.scss */
+  /* line 60, sass/components/_meet-andre.scss */
   .meet-andre-wrapper .meet-andre-right {
     text-align: left;
     width: 554px;
@@ -936,10 +981,9 @@ a {
   width: 50%;
   max-width: 669px;
   text-align: center;
-  background-color: #bcbcbc;
   float: right;
 }
-/* line 22, sass/components/_contact.scss */
+/* line 21, sass/components/_contact.scss */
 .contact .right-thumbnail img {
   width: 100%;
   height: auto;
@@ -950,32 +994,32 @@ a {
     width: 100%;
   }
 }
-/* line 31, sass/components/_contact.scss */
+/* line 30, sass/components/_contact.scss */
 .contact .contact-title-1 {
   font-family: "Bebas Neue Bold";
   font-size: 84px;
   line-height: .7;
   margin-bottom: 32px;
 }
-/* line 38, sass/components/_contact.scss */
+/* line 37, sass/components/_contact.scss */
 .contact .contact-title-2 {
   font-family: "Latin Modern Roman";
   font-size: 25px;
   margin-bottom: 64px;
 }
-/* line 45, sass/components/_contact.scss */
+/* line 44, sass/components/_contact.scss */
 .contact .wpcf7-form {
   color: #001423;
   font-size: 20px;
   font-family: "Bebas Neue";
 }
-/* line 50, sass/components/_contact.scss */
+/* line 49, sass/components/_contact.scss */
 .contact .wpcf7-form label {
   margin-bottom: 24px;
   display: block;
   padding-right: 16px;
 }
-/* line 56, sass/components/_contact.scss */
+/* line 55, sass/components/_contact.scss */
 .contact .wpcf7-form input[type="text"],
 .contact .wpcf7-form input[type="email"],
 .contact .wpcf7-form textarea {
@@ -986,4 +1030,69 @@ a {
   border-radius: 3px;
   margin-top: 8px;
   padding: 8px;
+}
+
+/* line 1, sass/components/_newsletter.scss */
+.newsletter {
+  background-color: #003c7f;
+  background-image: url('img/newsletter.png?1494461314');
+  padding: 56px 0 48px;
+  text-align: center;
+}
+/* line 7, sass/components/_newsletter.scss */
+.newsletter h3 {
+  font-family: "Bebas Neue Bold";
+  font-size: 37px;
+  color: #ffffff;
+  text-shadow: 1px 1px #00305b;
+}
+/* line 14, sass/components/_newsletter.scss */
+.newsletter h4 {
+  font-family: "Bebas Neue Light";
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 1px 1px #00305b;
+  margin: 16px 0 32px;
+}
+/* line 23, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs label {
+  -moz-box-shadow: 1px 1px #00305b;
+  -webkit-box-shadow: 1px 1px #00305b;
+  box-shadow: 1px 1px #00305b;
+  display: inline-block;
+  width: 246px;
+  text-align: left;
+  padding: 0 8px 16px 0;
+}
+@media (max-width: 767px) {
+  /* line 23, sass/components/_newsletter.scss */
+  .newsletter .newsletter-inputs label {
+    width: 100%;
+  }
+}
+/* line 35, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs p {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px #00305b;
+}
+/* line 42, sass/components/_newsletter.scss */
+.newsletter .newsletter-inputs input {
+  width: 100%;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 1px 1px #00305b;
+  -webkit-box-shadow: 1px 1px #00305b;
+  box-shadow: 1px 1px #00305b;
+  border: 1px solid #bcbcbc;
+  padding: 8px;
+  margin-top: 8px;
+}
+@media (max-width: 767px) {
+  /* line 54, sass/components/_newsletter.scss */
+  .newsletter .btn {
+    margin: 32px auto;
+  }
 }

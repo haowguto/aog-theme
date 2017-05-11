@@ -64,10 +64,31 @@
   /* Legacy iOS */
 }
 
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/OpenSans-Regular.ttf");
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Open-Sans/opensans-regular-webfont.svg#OpenSansRegular") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Ubuntu Bold";
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/Ubuntu-Bold.ttf");
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.eot?#iefix") format("embedded-opentype"), url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.woff") format("woff"), url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.ttf") format("truetype"), url("/aog/wp-content/themes/aog-theme/fonts/Ubuntu/ubuntu-b-webfont.svg#OpenSansRegular") format("svg");
+  /* Legacy iOS */
+}
+
 
 
 $aog-anonymous-pro: "Anonymous Pro";
 $aog-anonymous-pro-bold: "Anonymous Pro Bold";
 $aog-bebas-neue-bold: "Bebas Neue Bold";
 $aog-bebas-neue: "Bebas Neue";
+$aog-bebas-neue-light: "Bebas Neue Light";
 $aog-latin-modern-roman: "Latin Modern Roman";
+$aog-open-sans: "Open Sans Regular";
+$aog-ubuntu-bold: "Ubuntu Bold";

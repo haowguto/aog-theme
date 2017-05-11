@@ -3,16 +3,20 @@
 	text-align: center;
 	padding: $spacing-3 0 $spacing-4;
 	.menu-footer-categories {
-		& > li {
-			display: inline-block;
-			margin: 0 $spacing-3/2;
-			line-height: 41px;
-		}
 
-		a {
-			color: $aog-white;
-			font-family: $aog-anonymous-pro;
-			text-transform: uppercase;
+		.menu {
+			li {
+				display: inline-block;
+				margin: 0 $spacing-3/2;
+				line-height: 41px;
+			}
+
+			a {
+				color: $aog-white;
+				font-family: $aog-anonymous-pro;
+				text-transform: uppercase;
+			}
+			
 		}
 	}
 

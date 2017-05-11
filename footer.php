@@ -1,9 +1,10 @@
 <footer class="footer">
 	<nav class="aog-max-size-container">
 		<ul class="menu-footer-categories">
-			<li>
-				<a href="<?php get_option('home') ?>">Home</a>
-			</li><?php wp_list_categories('title_li=' ); ?>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'top',
+				'menu_id'        => 'top-menu',) );
+			?>
 		</ul>
 
 		<figure class="logo-footer">
