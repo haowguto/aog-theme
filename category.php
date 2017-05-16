@@ -1,13 +1,19 @@
 <?php get_header(); ?>
 
-<header class="header-left-titles">
+<!-- Hero Widget -->
+  <?php if ( is_active_sidebar( 'hero' ) ): ?>
+    <?php dynamic_sidebar( 'hero' ) ?>
+  <?php endif; ?>
+<!--/ Hero Widget -->
+
+  <!-- <header class="header-left-titles">
   <div class="aog-max-size-container">
     <div class="header-title">
       <h1>ANDRÉ GUADALUPE</h1>
       <h2>TUDO SOBRE AS TENDÊNCIAS EM TECNOLOGIA E INOVAÇÃO ESCOLAR</h2>
     </div>
   </div>
-</header>
+</header> -->
 
 <main class="main-content">
   <div class="aog-max-size-container">

@@ -1,21 +1,25 @@
 <?php get_header(); ?>
 
-<header class="header-left-titles">
+<!-- Hero Widget -->
+	<?php if ( is_active_sidebar( 'hero' ) ): ?>
+		<?php dynamic_sidebar( 'hero' ) ?>
+	<?php endif; ?>
+	<!--/ Hero Widget -->
+
+<!-- <header class="header-left-titles">
 	<div class="aog-max-size-container">
 		<div class="header-title">
 			<h1>trabalho há mais de 20 anos com escolas de alto desempenho</h1>
 			<h2>experiência com gestão e organização de escolas com excelência de resultados!</h2>
 		</div>
 	</div>
-</header>
+</header> -->
 
-<div class="newsletter">
-	<div class="aog-max-size-container">
-		<h3>ASSINE A NEWSLETTER E SAIBA TUDO PARA TER UMA ESCOLA DE ALTO DESEMPENHO</h3>
-		<h4>SEMPRE QUE EU TIVER ALGUMA NOVIDADE, VOCÊ SERÁ A PRIMEIRA PESSOA A SABER!</h4>
-		<?php echo do_shortcode( '[contact-form-7 id="11" title="Assine minha newsletter e saiba tudo sobre escola de alto desempenho" html_class="newsletter-inputs"]' ); ?>
-	</div>
-</div>
+<!-- Newsletter Widget -->
+	<?php if ( is_active_sidebar( 'newsletter' ) ): ?>
+		<?php dynamic_sidebar( 'newsletter' ) ?>
+	<?php endif; ?>
+<!--/ Newsletter Widget -->
 
 <main class="main-content">
 	<div class="aog-max-size-container">
@@ -71,12 +75,10 @@
 	</div>
 </div>
 
-<div class="newsletter">
-	<div class="aog-max-size-container">
-		<h3>ASSINE A NEWSLETTER E SAIBA TUDO PARA TER UMA ESCOLA DE ALTO DESEMPENHO</h3>
-		<h4>SEMPRE QUE EU TIVER ALGUMA NOVIDADE, VOCÊ SERÁ A PRIMEIRA PESSOA A SABER!</h4>
-		<?php echo do_shortcode( '[contact-form-7 id="11" title="Assine minha newsletter e saiba tudo sobre escola de alto desempenho" html_class="newsletter-inputs"]' ); ?>
-	</div>
-</div>
+<!-- Newsletter Widget -->
+	<?php if ( is_active_sidebar( 'newsletter' ) ): ?>
+		<?php dynamic_sidebar( 'newsletter' ) ?>
+	<?php endif; ?>
+<!--/ Newsletter Widget -->
 
 <?php get_footer(); ?>

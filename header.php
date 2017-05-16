@@ -27,11 +27,13 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+	<?php var_dump(get_theme_mod('aog_facebook'));?>
 	<header class="taskbar">
 		<div class="aog-max-size-container">
 			<figure class="logo-header">
 				<a href="<?php echo get_option('home'); ?>">
-					<img src="/aog/wp-content/themes/aog-theme/img/logo-120px.png">
+					<?php the_custom_logo() ?>
+					<!-- <img src="/aog/wp-content/themes/aog-theme/img/logo-120px.png"> -->
 				</a>
 			</figure>
 			
@@ -44,7 +46,7 @@
 				</ul>
 				<ul class="social-nav">
 					<li>
-						<a href="https://www.facebook.com/aogedu" class="fa fa-facebook"></a>
+						<a href="<?php get_option('aog_facebook') ?>" class="fa fa-facebook"></a>
 					</li>
 					<li>
 						<a href="https://www.youtube.com/user/andre97web" class="fa fa-youtube"></a>

@@ -121,7 +121,6 @@ function aog_customizer( $wp_customize ) {
    * Facebook setting
    */
   $wp_customize->add_setting( 'aog_facebook', array(
-    'type'    => 'option',
     'default' => 'https://www.facebook.com/aogedu',
   ));
 
